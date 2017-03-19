@@ -696,6 +696,21 @@ Prefab:
       propertyPath: m_LocalScale.y
       value: 0.21
       objectReference: {fileID: 0}
+    - target: {fileID: 114526024112723674, guid: 7b4d558ce607ad842ae11dd4c2d88ba3,
+        type: 2}
+      propertyPath: m_FontData.m_FontSize
+      value: 24
+      objectReference: {fileID: 0}
+    - target: {fileID: 114526024112723674, guid: 7b4d558ce607ad842ae11dd4c2d88ba3,
+        type: 2}
+      propertyPath: m_FontData.m_Alignment
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 114526024112723674, guid: 7b4d558ce607ad842ae11dd4c2d88ba3,
+        type: 2}
+      propertyPath: m_FontData.m_Font
+      value: 
+      objectReference: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 7b4d558ce607ad842ae11dd4c2d88ba3, type: 2}
   m_IsPrefabParent: 0

@@ -129,15 +129,16 @@ public class VuMarkHandler : MonoBehaviour
 
     private IEnumerator ShowPanel(string vuMarkTitle, string vuMarkId, Sprite vuMarkImage)
     {
-        WWW resourceURI = new WWW("https://s3.eu-west-2.amazonaws.com/imagebucket15/" + vuMarkId);
-        yield return resourceURI;
+        string url = "https://s3.eu-west-2.amazonaws.com/imagebucket15/" + vuMarkId;
 
-        WWW resourceContent = new WWW(resourceURI.text);
+        Debug.Log(url);
+
+        WWW resourceContent = new WWW(url);
         yield return resourceContent;
 
         var image = Sprite.Create(resourceContent.texture, new Rect(0, 0, resourceContent.texture.width, resourceContent.texture.height), new Vector2(0.5f, 0.5f), 100.0f);
 
-        mIdPanel.Show(resourceURI.text, vuMarkId, image);
+        mIdPanel.Show(vuMarkId, vuMarkId, image);
     }
 
     private string GetVuMarkDataType(VuMarkTarget vumark)
